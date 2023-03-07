@@ -19,9 +19,8 @@ public class Ejercicio_extra_8 {
 
 
     
-        for (int i = 0; i < tod.length; i++) {
-            System.out.println(tod[i]);
-        }
+        for (int i = 0; i < tod.length; i++) {System.out.println(tod[i]);}
+     
         
         
     }
