@@ -27,7 +27,7 @@ public class Ejercicio_extra_13 {
                 System.out.print(j);
                 
             }
-            cont++; 
+             cont++;
             System.out.println(cont);
             
         }
