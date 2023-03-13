@@ -4,64 +4,70 @@
  * and open the template in the editor.
  */
 package java_ejercicios_extras_1al10;
+
 import java.util.Scanner;
+
 /**
  *
  * @author Usuario
  */
 public class Ejercicio_extra_4 {
+
     public static void main(String[] args) {
-        
-    String rr = r();
-    
-        System.out.println(rr);   
+
+        String rr = r();
+
+        System.out.println(rr);
     }
-    public static String r(){
-    Scanner leer = new Scanner(System.in);
-    
-        
-       String r = "";
-       
+
+    public static String r() {
+        Scanner leer = new Scanner(System.in);
+
+        String r = "";
+
         System.out.println("Ingres un numero y te muestro si equivalente romano:");
-        
+
         int n = leer.nextInt();
-        
-        switch (n){
-        
+
+        switch (n) {
+
             case 1:
-                r +="I";
+                r += "I";
                 break;
-            case 2:    
-                r +="II";
+            case 2:
+                r += "II";
                 break;
-            case 3:    
-                r +="III";
+            case 3:
+                r += "III";
                 break;
-            case 4:    
-                r +="IV";
+            case 4:
+                r += "IV";
                 break;
-            case 5:    
-                r +="V";
+            case 5:
+                r += "V";
                 break;
-            case 6:    
-                r +="VI";
+            case 6:
+                r += "VI";
                 break;
-            case 7:    
-                r +="VII";
+            case 7:
+                r += "VII";
                 break;
-            case 8:    
-                r +="IIX";
+            case 8:
+                r += "IIX";
                 break;
-            case 9:    
-                r +="IX";
+            case 9:
+                r += "IX";
                 break;
-                
+            case 10:
+                r += "X";
+                break;
+
             default:
-                r +="No corresponde ningun numero de la lista";
+                r += "No corresponde ningun numero de la lista";
                 break;
         }
-    
-    return r;
-    
+
+        return r;
+
     }
 }
