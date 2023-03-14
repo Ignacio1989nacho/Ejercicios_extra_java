@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Realice un programa que calcule y visualice el valor máximo, el valor mínimo y el
+promedio de n números (n>0). El valor de n se solicitará al principio del programa y los
+números serán introducidos por el usuario. Realice dos versiones del programa, una
+usando el bucle “while” y otra con el bucle “do - while”.
+
  */
 package java_ejercicios_extras_1al10;
 
@@ -31,20 +33,17 @@ public class Ejercicio_extra_7 {
         }
         promedio = total / contador;
 
-        System.out.println(total);
-        System.out.println(promedio);
+        System.out.println("TOTAL SUMA NUMEROS " +total);
+        System.out.println("PROMEDIO DE NUMEROS " +promedio);
         
         
-        int [] vec = v(num);
+        v(num);
         
-        for (int i = 0; i < 1; i++) {
-            System.out.println("el total es de: "+vec[0]);
-            System.out.println("el promedio es de: "+vec[1]);
-        }
+      
         
     }
 
-    public static int[] v(int num) {
+    public static void v(int num) {
         Scanner leer = new Scanner(System.in);
         int[] v = new int[2];
 
@@ -63,10 +62,12 @@ public class Ejercicio_extra_7 {
 
         }while(contador <3);
         promedio = total / contador;
-        v[0] = total;
-        v[1] = promedio;
+       for (int i = 0; i < 1; i++) {
+            System.out.println("el total es de: "+total);
+            System.out.println("el promedio es de: "+promedio);
+        }
 
-    return v;
+  
     
     }
 
